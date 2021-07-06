@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+}
+
+/* .box {
+    margin-top: 50px;
+    display: inline-block;
+    border: 40px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+
+div {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 50px auto;
+    display: block;
+}
+
+span {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    margin: 50px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+a {
+    text-decoration-color: red;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: double;
+}
+
+p {
+    /* text-decoration: dashed black; */
+    /* text-decoration: line-through;
+    text-decoration-style: dashed;
+    text-decoration-color: black; */
+    /* text-transform: capitalize;
+    letter-spacing: 10px;
+    line-height: 20px;
+    text-shadow: 5px 5px 2px black; */
+    font-size: 30px;
+}
+
+.box-shadowed {
+    box-shadow: 0 0 15px 5px black;
+}
+
+.inheritance {
+    background-color: red;
+}
