@@ -1,0 +1,415 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    
+    font-family: sans-serif;
+}
+
+header{
+    background-color: black;
+    height: 6vh;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .nav-links ul{
+    display: flex;
+    
+}
+
+header .nav-links ul li{
+    padding: 2rem 1rem;
+    margin-right: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+header .nav-links ul li:hover{
+    background-color: #ccc;
+}
+
+header .nav-links ul li a{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+header nav .search{
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+header nav .search:hover{
+    background-color: brown;
+}
+
+header nav .search img{
+    filter: invert(1);
+    width: 15px;
+}
+
+
+header .nav-links .dropdown .drop-btn{
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 2rem .5rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header .nav-links .dropdown .dropdown-content{
+    display: none;
+} 
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+main .bg{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+main .bg img{
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+main .title{
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+}
+
+main .title p{
+    color: #fff;
+}
+
+main .title .city-name{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+
+main .title .about{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#theband{
+    width: 800px;
+    margin: 100px auto;
+}
+
+#theband .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#theband .container div{
+    margin: .8rem 0;
+}
+
+#theband .container h2{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+#theband .container i{
+    color: rgb(146, 145, 145);
+}
+
+#theband .container .band-about{
+    margin-bottom: 2rem;
+}
+
+#theband .container .band-about p{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#theband .container .band-members{
+    display: flex;
+    justify-content: space-between;
+}
+
+#theband .container .band-members .band-member{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#theband .container .band-members .band-member p{
+    margin-bottom: 1rem;
+}
+
+#theband .container .band-members .band-member img{
+    width: 150px;
+    border-radius: 3px;
+}
+
+
+#tour-dates{
+    height: 115vh;
+    background-color: #000;
+}
+
+.tour-dates{
+    width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.tour-dates h1{
+    color: #fff;
+    margin-top: 6rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.tour-dates .italic{
+    color: rgb(146, 145, 145);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.tour-dates .months{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.tour-dates .months .month{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    height: 2.7rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 222, 222);
+    padding: 1rem;
+}
+
+.tour-dates .months .month .month-mg{
+    margin-right: 2rem;
+}
+
+.tour-dates .months .month .sold-out{
+    background-color: rgb(255, 41, 41);
+    padding: .2rem .7rem;
+    color: rgb(255, 255, 255);
+}
+
+.tour-dates .months .last-month{
+    background-color: #fff;
+    display: flex;
+    height: 2.7rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 222, 222);
+    padding: 1rem;
+}
+
+.tour-dates .months .last-month .stock{
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-dates .cities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-dates .cities .city{
+    background-color: #fff;
+    margin-right: 1rem;
+    width: 257px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-dates .cities .city:last-child{
+    margin-right: 0;
+}
+
+.tour-dates .cities .city img{
+    width: 257px;
+    height: 184px;
+}
+
+
+.tour-dates .cities .city .city-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+
+.tour-dates .cities .city .city-about .city-name{
+    font-weight: 600;
+}
+
+.tour-dates .cities .city .city-about .city-date{
+    color: rgb(146, 145, 145);
+}
+
+.tour-dates .cities .city .city-about .city-btn{
+    border: none;
+    background-color: #000;
+    padding: .5rem;
+    display: inline;
+    width: 118px;
+    height: 34px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.tour-dates .cities .city .city-about .city-btn:hover{
+    color: #000;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.contact{
+    width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact-txt{
+    color: #000;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact .contact-fan{
+    color: rgb(146, 145, 145);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.contact .message{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .message .address p{
+    font-size: 18px;
+}
+
+.contact .message .address img{
+    width: 16px;
+    margin-right: 1rem;
+}
+
+.contact .message .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .message .form form input{
+    padding: .7rem;
+    margin-bottom: .5rem;
+    border: 1px solid #aaa;
+}
+
+.contact .message .form .form-btn{
+    color: #fff;
+    background: none;
+    background-color: #000;
+    width: 74px;
+    height: 38px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.contact .message .form .form-btn:hover{
+    background-color: #aaa;
+    color: #000;
+}
+
+#map{
+    margin-bottom: 6rem;
+}
+
+#map img{
+    width: 1519px;
+    height: 855px;
+}
+
+footer{
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links{
+    margin-bottom: 2rem;
+    margin-right: 20px;
+}
+
+footer .sign .link{
+    color: rgb(53, 53, 53);
+    text-decoration: underline;
+}
